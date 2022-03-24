@@ -1,0 +1,12 @@
+import cv2
+orig_img = cv2.imread(r"C:\Users\TUF\Downloads\\photo-1572166365087-96ac83103260.jfif")
+
+grey_img = cv2.cvtColor(orig_img,cv2.COLOR_BGR2GRAY)
+
+cv2.imshow('color',orig_img)
+
+cv2.imshow('grey',grey_img)
+
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
